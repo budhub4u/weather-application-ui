@@ -1,5 +1,5 @@
 export interface WeatherData {
-  temperatureData?: Temperature;
+  temperature?: Temperature;
   airQuality?: AirQuality;
 }
 
