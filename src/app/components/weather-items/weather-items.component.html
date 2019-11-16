@@ -3,10 +3,10 @@
 
   <div class="weather-items">
     <app-weather-temperature
-      [temperatureData]="myData.temperature"
+      [temperatureData]="weatherData?.temperature"
     ></app-weather-temperature>
     <app-weather-air-quality-index
-      [airQualityData]="myData.airQuality"
+      [airQualityData]="weatherData?.airQuality"
     ></app-weather-air-quality-index>
   </div>
 </div>
