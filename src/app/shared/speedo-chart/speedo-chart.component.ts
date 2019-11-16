@@ -8,7 +8,7 @@ import { Component, OnChanges, Input } from '@angular/core';
 export class SpeedoChartComponent implements OnChanges {
   @Input() dialValue;
 
-  //chart config
+  // chart config
   dataSource = {
     chart: {
       lowerLimit: '0',
@@ -49,7 +49,7 @@ export class SpeedoChartComponent implements OnChanges {
   constructor() {}
 
   ngOnChanges(changes) {
-    //Need to update the chart value whenever the input value gets updated.
+    // Need to update the chart value whenever the input value gets updated.
     if (changes.dialValue) {
       this.dataSource.dials.dial[0].value = this.dialValue;
     }

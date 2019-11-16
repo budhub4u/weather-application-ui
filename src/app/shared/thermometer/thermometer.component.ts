@@ -8,7 +8,7 @@ import { Component, Input, OnChanges } from '@angular/core';
 export class ThermometerComponent implements OnChanges {
   @Input() temperature: number;
 
-  //chart config
+  // chart config
   dataSource = {
     chart: {
       lowerLimit: '0',
@@ -23,7 +23,7 @@ export class ThermometerComponent implements OnChanges {
   constructor() {}
 
   ngOnChanges(changes) {
-    //Need to update the chart value whenever the input value gets updated.
+    // Need to update the chart value whenever the input value gets updated.
     if (changes.temperature) {
       this.dataSource.value = this.temperature;
     }

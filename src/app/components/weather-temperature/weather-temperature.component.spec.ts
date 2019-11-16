@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { WeatherTemperatureComponent } from './weather-temperature.component';
 
@@ -8,9 +9,9 @@ describe('WeatherTemperatureComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WeatherTemperatureComponent ]
-    })
-    .compileComponents();
+      declarations: [WeatherTemperatureComponent],
+      schemas: [NO_ERRORS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

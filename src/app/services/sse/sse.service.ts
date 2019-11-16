@@ -8,21 +8,21 @@ export class SseService {
   constructor(private _zone: NgZone) {}
 
   private _isConnectionActive: boolean = false;
-  private _reconnectAttemptsLeft = 10; //number times it will attempts to re-establish connection
+  private _reconnectAttemptsLeft = 10; // number times it will attempts to re-establish connection
   getServerSentEvent(url: string) {
     console.log('Establishing connection with url' + url);
     return Observable.create(observer => {
       while (
         this._reconnectAttemptsLeft > 0 &&
-        this._isConnectionActive != true
+        this._isConnectionActive !== true
       ) {
-        //debugger;
+        // debugger;
         this._isConnectionActive = true;
         const eventSource = new EventSource(url);
 
         eventSource.onopen = () => {
           console.log('isConnectionActive =' + this._isConnectionActive);
-          this._reconnectAttemptsLeft = 10; //reset attempts
+          this._reconnectAttemptsLeft = 10; // reset attempts
         };
 
         eventSource.onmessage = event => {
@@ -45,9 +45,9 @@ export class SseService {
             eventSource.close();
           }
 
-          this._zone.run(() => {
-            //
-          });
+          // this._zone.run(() => {
+          //   //
+          // });
         };
       }
     });
