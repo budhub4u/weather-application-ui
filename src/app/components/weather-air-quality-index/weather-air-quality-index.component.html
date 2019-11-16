@@ -1,0 +1,7 @@
+<div class="weather-item">
+  <app-speedo-chart [dialValue]="airQualityData?.aqi"></app-speedo-chart>
+
+  <div>
+    <h3>Air Quality Index = {{ airQualityData?.aqi || '???' }}</h3>
+  </div>
+</div>

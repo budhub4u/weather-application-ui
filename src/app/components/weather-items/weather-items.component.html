@@ -1,0 +1,12 @@
+<div class="content">
+  <h2>Data from Weather Station</h2>
+
+  <div class="weather-items">
+    <app-weather-temperature
+      [temperatureData]="myData.temperature"
+    ></app-weather-temperature>
+    <app-weather-air-quality-index
+      [airQualityData]="myData.airQuality"
+    ></app-weather-air-quality-index>
+  </div>
+</div>
