@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./weather-temperature.component.css']
 })
 export class WeatherTemperatureComponent implements OnInit {
-  @Input('temperatureData') temperatureData;
+  @Input() temperatureData;
   constructor() {}
 
   ngOnInit() {}

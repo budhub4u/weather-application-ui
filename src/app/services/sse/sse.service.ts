@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
 export class SseService {
   constructor(private _zone: NgZone) {}
 
-  private _isConnectionActive: boolean = false;
+  private _isConnectionActive = false;
   private _reconnectAttemptsLeft = 10; // number times it will attempts to re-establish connection
   getServerSentEvent(url: string) {
     console.log('Establishing connection with url' + url);
-    return Observable.create(observer => {
+    return new Observable<any>(observer => {
       while (
         this._reconnectAttemptsLeft > 0 &&
         this._isConnectionActive !== true

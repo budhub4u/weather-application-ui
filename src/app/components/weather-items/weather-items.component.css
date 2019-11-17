@@ -1,0 +1,7 @@
+.weather-app--weather-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+  }
