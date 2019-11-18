@@ -1,4 +1,6 @@
 export interface WeatherData {
+  id: number;
+  cityName: string;
   temperature?: Temperature;
   airQuality?: AirQuality;
 }

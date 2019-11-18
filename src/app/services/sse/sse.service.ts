@@ -44,10 +44,6 @@ export class SseService {
             observer.error(error);
             eventSource.close();
           }
-
-          // this._zone.run(() => {
-          //   //
-          // });
         };
       }
     });

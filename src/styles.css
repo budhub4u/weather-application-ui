@@ -1,10 +1,10 @@
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0.5rem 0;
 }
 
@@ -13,14 +13,12 @@ p {
 }
 
 .weather-app--content {
-  display: flex;
   margin-top: 1rem;
   padding: 0 1rem;
   flex-direction: column;
   justify-content: center;
-  height:85vh
+  height: 85vh;
 }
-
 
 .weather-app--weather-item {
   border-radius: 0.625rem;
@@ -61,11 +59,4 @@ p {
 .weather-app--button:hover {
   opacity: 0.5;
   transform: translateY(-0.1875rem);
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 47.9375rem) {
-  .weather-app--weather-item {
-    margin: 0.5rem 0;
-  }
 }

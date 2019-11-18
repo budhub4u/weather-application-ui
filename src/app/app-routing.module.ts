@@ -4,7 +4,8 @@ import { WeatherItemsComponent } from './components/weather-items/weather-items.
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'home', component: WeatherItemsComponent },
+  //{ path: 'home', component: WeatherItemsComponent },
+  { path: ':city', component: WeatherItemsComponent },
   { path: '', component: WeatherItemsComponent },
   { path: '**', component: NotFoundComponent }
 ];
