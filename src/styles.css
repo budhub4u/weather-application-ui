@@ -13,11 +13,11 @@ p {
 }
 
 .weather-app--content {
+  display: flex;
   margin-top: 1rem;
-  padding: 0 1rem;
   flex-direction: column;
   justify-content: center;
-  height: 85vh;
+  min-height: 80vh;
 }
 
 .weather-app--weather-item {
